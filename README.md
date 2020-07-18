@@ -2,7 +2,7 @@
 
 <img align='right' src='https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif' width='200"'>
 
-[Instagram](https://instagram.com/code_with_rohit?igshid=71vfqs608pnw)]
+[Instagram](https://instagram.com/code_with_rohit?igshid=71vfqs608pnw)
 
 I am Rohit Jangid 😃. I am from Nagpur, Maharashtra. I love to explore and learn about new things.
 ## ⚡ Technologies
