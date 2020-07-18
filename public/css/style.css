@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+
+:root {
+    --whiteColor : #ededed;
+    --blackColor : #333333; 
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* signip & signup page  */
+.brand{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    margin-top: 2rem;
+    background-color: lightgray;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 10px var(--blackColor);
+}
+
+.userLeft {
+    height: 100vh;
+    width: 50vw;
+    background-color: var(--blackColor);
+}
+.userLeft img {
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px var(--whiteColor);
+}
+
+.userRight {
+    flex-direction: column;
+}
+.userRight form {
+    width: 60%;
+    border: 2px solid var(--blackColor);
+    padding: 3rem;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px var(--blackColor);
+}
+.switchLogin{
+    margin-top: 1rem;
+    text-align: start;
+}
+
+/* main page, header&foorter  */
+#todo{
+    height: 100vh;
+    background-color: gray;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    background: var(--blackColor);
+    padding: 1rem 4rem;
+    color: var(--whiteColor);
+    box-shadow: 0 2px 8px var(--blackColor);
+}
+
+#heading {
+    background-color: var(--blackColor);
+    text-align: center;
+    color: var(--whiteColor);
+    padding: .5rem;
+}
+.box {
+    max-width: 500px;
+    margin: 4rem auto;
+    border: solid 2px var(--blackColor);
+    border-radius: 5px;
+}
+
+.item {
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.item input {
+    height: 45px;   
+    background-color: var(--blackColor);
+    border: none;
+    border-radius: 2px;
+}
+.item input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+}
+.item input:checked{
+    text-decoration: line-through;
+    text-decoration-color: var(--blackColor);
+}
+.box button {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    /* text-align: center; */
+}

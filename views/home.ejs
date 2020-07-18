@@ -1,0 +1,33 @@
+<%- include("partials/header") %>
+
+<section id="todo">
+    <header>
+        <div class="main-header">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="brand" width="40">
+            <h2>Hello, Welcome <%= userName %></h2>
+            <a href="/" class="btn btn-outline-light">logout</a>
+        </div>
+    </header>
+    <div id="heading" class="box">
+        <h2>List Man</h2>
+    </div>
+
+    <div class="box">
+        <form class="item" action="/submit" method="POST">
+            <input type="text" name="newItem" placeholder="Add new item" autocomplete="off">
+            <input type="hidden" name="userName" value="<%= userName %>"></input>
+            <button class="btn btn-outline-dark pt-0" type="submit">+</button>
+        </form>
+
+        <% listItems.map((item, index) => { %>
+        <form action="/delete" method="POST">
+            <div class="item p-2 overflow-auto">            
+                <input class="mr-2" type="checkbox" name="checkbox" value="<%= index %>" onchange="this.form.submit()"><%= item %></input>                          
+            </div>
+            <input type="hidden" name="userName" value="<%= userName %>"></input>
+        </form>
+        <% }) %>  
+    </div>
+</section>
+
+<%- include("partials/footer") %>
